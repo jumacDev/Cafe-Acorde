@@ -33,12 +33,10 @@ class _HomePageState extends State<HomePage> {
             Container(
               padding: const EdgeInsets.all(15),
               alignment: Alignment.center,
-              child: RaisedButton(
-                shape: const RoundedRectangleBorder(
-                    borderRadius: BorderRadius.all(Radius.circular(15))),
-                padding:
-                    const EdgeInsets.symmetric(vertical: 10, horizontal: 30),
-                color: Colors.orange,
+              child: ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.orange
+                ),
                 onPressed: () {
                   Navigator.pushNamed(context, '/LoginPage');
                 },
@@ -51,12 +49,8 @@ class _HomePageState extends State<HomePage> {
             Container(
               padding: const EdgeInsets.all(15),
               alignment: Alignment.center,
-              child: RaisedButton(
-                shape: const RoundedRectangleBorder(
-                    borderRadius: BorderRadius.all(Radius.circular(15))),
-                padding:
-                    const EdgeInsets.symmetric(vertical: 10, horizontal: 40),
-                color: Colors.orange,
+              child: ElevatedButton(
+                style: ElevatedButton.styleFrom(backgroundColor: Colors.orange),
                 onPressed: () {
                   Navigator.pushNamed(context, '/RegisterPage');
                 },

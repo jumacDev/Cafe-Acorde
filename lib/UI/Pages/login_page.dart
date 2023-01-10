@@ -97,12 +97,10 @@ class _LoginPageState extends State<LoginPage> {
               padding: const EdgeInsets.all(10),
               alignment: Alignment.center,
               // ignore: deprecated_member_use
-              child: RaisedButton(
-                shape: const RoundedRectangleBorder(
-                    borderRadius: BorderRadius.all(Radius.circular(15))),
-                padding:
-                    const EdgeInsets.symmetric(vertical: 10, horizontal: 30),
-                color: Colors.orange,
+              child: ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                    backgroundColor: Colors.orange
+                ),
                 onPressed: () {
                   if(emailText.text != '' && passText.text != ''){
                     LoginData userData = LoginData(emailText.text, passText.text);

@@ -102,8 +102,8 @@ class RegisterPage extends StatelessWidget {
                       },
                       //controller: passText,
                     ),
-                    // ignore: deprecated_member_use
-                    RaisedButton(
+
+                    ElevatedButton(
                       onPressed: () {
                         if (emailText.text != '' && userText.text != '') {
                           RegisterData userData = RegisterData(
@@ -118,9 +118,8 @@ class RegisterPage extends StatelessWidget {
                           alertDialog('Campos vacios', context);
                         }
                       },
-                      shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(12.0)),
-                      color: Colors.orange,
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: Colors.orange),
                       child: const Text(
                         'Registrarse',
                         style: TextStyle(fontSize: 18.0, color: Colors.white),
