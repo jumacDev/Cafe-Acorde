@@ -1,9 +1,7 @@
 <<<<<<< HEAD
 # Cafe-Acorde
 =======
-# firebase_login
 
-A new Flutter project.
 
 ## Getting Started
 
